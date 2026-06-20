@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar_logos.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Insta"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3938/3938028.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"></a>
+      </div>      
+
+      <script>
+        let timeoutID;
+
+function hideSidebar() {
+  document.querySelector('.sidebar').classList.add('hidden');
+}
+
+function showSidebar() {
+  document.querySelector('.sidebar').classList.remove('hidden');
+  resetHideTimeout(); // Restart the timeout when mouse moves
+}
+
+function resetHideTimeout() {
+  clearTimeout(timeoutID); // Clear previous timeout
+  timeoutID = setTimeout(hideSidebar, 3000); // 3 seconds idle time
+}
+
+document.addEventListener('mousemove', showSidebar);
+
+// Start the timeout to hide the sidebar after the page loads
+window.onload = resetHideTimeout;
+
+      </script>
+</body>
+</html>

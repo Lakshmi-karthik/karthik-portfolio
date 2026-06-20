@@ -1,0 +1,142 @@
+.about-container {
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: inherit;
+  background-color: whitesmoke;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold; /* Make the heading bold */
+  position: relative;
+}
+
+.about-container h1::after {
+  content: "";
+  display: block;
+  width: 80px; /* Adjust width as needed */
+  height: 5px; /* Thickness of the underline */
+  background-color: #e100ff; /* Color of the underline */
+  margin: 0.5rem auto 0; /* Center the underline and add space */
+  border-radius: 5px; /* Optional: Rounded corners for the underline */
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify; /* Justify the text for better readability */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-left, .about-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.about-left h2, .about-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold; /* Make the sub-headings bold */
+}
+
+.about-left p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem; /* Reduced margin-bottom to decrease the gap */
+  line-height: 1.5;
+}
+
+.about-left .btn {
+  margin-top: 1rem; /* Adjusted margin-top for better spacing */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  border-color: black;
+  color: white; /* Ensure the button text is visible */
+  text-decoration: none;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Make the skill items bold */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .about-container h1 {
+    font-size: 2rem;
+  }
+  .about-left h2, .about-right h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container p {
+    font-size: 1.1rem;
+  }
+  .about-left p {
+    font-size: 1.1rem;
+  }
+  .about-left .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-left, .about-right {
+    min-width: 100%;
+    text-align: center;
+  }
+  .about-left h2, .about-right h2 {
+    font-size: 1.5rem;
+  }
+  .skills-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container h1 {
+    font-size: 1.75rem;
+  }
+  .about-left h2, .about-right h2 {
+    font-size: 1.25rem;
+  }
+  .about-container p {
+    font-size: 1rem;
+  }
+  .about-left p {
+    font-size: 1rem;
+  }
+  .about-left .btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

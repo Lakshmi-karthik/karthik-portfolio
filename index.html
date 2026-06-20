@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar_logos.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/karthik2.jpeg" alt="Logo" class="logo">
+            <span class="name">LAKSHMI KARTHIK</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="sidebar">
+        <a href="#"><img src="/insta logo.webp" alt="Insta"></a>
+        <a href="#"><img src="/whatsapp logo.webp" alt="Whatsapp"></a>
+        <a href="#"><img src="/linkedin-logo.png" alt="LinkedIn"></a>
+      </div>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="overlay-text">
+                <h1>Hey, I am Lakshmi Karthik</h1>
+                <p>
+                    A Result-Oriented Web Developer building and managing Websites </br> and 
+                    Web Applications that leads to the success of the overall product
+                </p>
+              </br>
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+            </div>
+          </div>
+    </section>
+
+    <section id="about">
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+          <style>
+              .about-container {
+        padding: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: inherit;
+        background-color: whitesmoke;
+      }
+      
+      .about-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold; /* Make the heading bold */
+        position: relative;
+      }
+      
+      .about-container h1::after {
+        content: "";
+        display: block;
+        width: 80px; /* Adjust width as needed */
+        height: 5px; /* Thickness of the underline */
+        background-color: #e100ff; /* Color of the underline */
+        margin: 0.5rem auto 0; /* Center the underline and add space */
+        border-radius: 5px; /* Optional: Rounded corners for the underline */
+      }
+      
+      .about-container p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify; /* Justify the text for better readability */
+      }
+      
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      
+      .about-left, .about-right {
+        flex: 1;
+        min-width: 300px;
+        text-align: left;
+      }
+      
+      .about-left h2, .about-right h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold; /* Make the sub-headings bold */
+      }
+      
+      .about-left p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem; /* Reduced margin-bottom to decrease the gap */
+        line-height: 1.5;
+      }
+      
+      .about-left .btn {
+        margin-top: 1rem; /* Adjusted margin-top for better spacing */
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        background-color: black;
+        border-color: black;
+        color: white; /* Ensure the button text is visible */
+        text-decoration: none;
+      }
+      
+      .skills-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      
+      .skill {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold; /* Make the skill items bold */
+      }
+      
+      /* Media Queries */
+      @media (max-width: 1200px) {
+        .about-container h1 {
+          font-size: 2rem;
+        }
+        .about-left h2, .about-right h2 {
+          font-size: 1.75rem;
+        }
+      }
+      
+      @media (max-width: 992px) {
+        .about-container p {
+          font-size: 1.1rem;
+        }
+        .about-left p {
+          font-size: 1.1rem;
+        }
+        .about-left .btn {
+          font-size: 0.9rem;
+          padding: 0.4rem 0.8rem;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          align-items: center;
+        }
+        .about-left, .about-right {
+          min-width: 100%;
+          text-align: center;
+        }
+        .about-left h2, .about-right h2 {
+          font-size: 1.5rem;
+        }
+        .skills-box {
+          justify-content: center;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .about-container h1 {
+          font-size: 1.75rem;
+        }
+        .about-left h2, .about-right h2 {
+          font-size: 1.25rem;
+        }
+        .about-container p {
+          font-size: 1rem;
+        }
+        .about-left p {
+          font-size: 1rem;
+        }
+        .about-left .btn {
+          font-size: 0.8rem;
+          padding: 0.3rem 0.6rem;
+        }
+      }
+      
+          </style>
+      </head>
+      <body>
+          <div class="about-container">
+              <h1>About Me</h1>
+              <p>
+                Here you will find more information about me, what I do, and my current skills mostly
+                in terms of programming and technology.
+              </p>
+              <div class="about-content">
+                <div class="about-left">
+                  <h2>Get to know me</h2>
+                  <p>
+                    I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+                  </p>
+                  <p>
+                    I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming.
+                  </p>
+                  <p>
+                    I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                  </p>
+                  <a href="/contact" class="btn btn-primary">Contact</a>
+                </div>
+                <div class="about-right">
+                  <h2>My Skills</h2>
+                  <div class="skills-box">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">MySQL</span>
+                    <span class="skill">Angular</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">Spring Boot</span>
+                    <span class="skill">Micro Services</span>
+                    <span class="skill">Hibernate</span>
+                    <span class="skill">WordPress</span>
+                    <!-- Add more skills as needed -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+      </body>
+      </html>
+          
+    </section>
+
+    <section id="projects">
+        <div class="project-container">
+            <h1>My Projects</h1>
+            <p>
+              Here you will find some of the personal and clients projects that I created
+              with each project containing its own case study.
+            </p>
+            <div class="project">
+              <div class="project-image">
+                <img src="https://www.rammaheshwari.com/assets/jpeg/dopefolio.jpeg" alt="Project 1">
+              </div>
+              <div class="project-details">
+                <h2>Project 1</h2>
+                <p>This is a brief description of Project 1. It showcases the key features and functionalities of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, expedita quod tenetur beatae tempora labore!</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="https://www.rammaheshwari.com/assets/jpeg/wilsonport.jpeg" alt="Project 2">
+              </div>
+              <div class="project-details">
+                <h2>Project 2</h2>
+                <p>This is a brief description of Project 2. It showcases the key features and functionalities of the project. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum culpa praesentium nobis repudiandae itaque. Eos!</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="https://www.rammaheshwari.com/assets/jpeg/boreal-coffee-clone.jpeg" alt="Project 3">
+              </div>
+              <div class="project-details">
+                <h2>Project 3</h2>
+                <p>This is a brief description of Project 3. It showcases the key features and functionalities of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi omnis cum quis, sequi repellendus numquam!</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="https://www.rammaheshwari.com/assets/jpeg/boreal-coffee-clone.jpeg" alt="Project 4">
+              </div>
+              <div class="project-details">
+                <h2>Project 4</h2>
+                <p>This is a brief description of Project 4. It showcases the key features and functionalities of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi omnis cum quis, sequi repellendus numquam!</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="https://www.rammaheshwari.com/assets/jpeg/boreal-coffee-clone.jpeg" alt="Project 5">
+              </div>
+              <div class="project-details">
+                <h2>Project 5</h2>
+                <p>This is a brief description of Project 5. It showcases the key features and functionalities of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi omnis cum quis, sequi repellendus numquam!</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-overlay text-center text-white">
+              <h1>Contact</h1>
+              <div class="underline mx-auto mb-4"></div>
+              <p class="mb-4">
+                Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
+              </p>
+              <div class="contact-form-container bg-light text-dark p-4 rounded shadow">
+                <form>
+                  <div class="form-group text-left mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group text-left mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group text-left mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+
+    <section id="footer">
+        <footer class="footer-container">
+            <div class="footer-content">
+              <div class="footer-left text-left">
+                <h2>Lakshmi Karthik</h2>
+                <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</p>
+              </div>
+              <div class="footer-right">
+                <div class="footer-center">
+                  <h2>Social</h2>
+                  <div class="social-media">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Insta"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3938/3938028.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"></a>
+                  </div>
+                </div>
+                <div class="footer-links">
+                  <h2>Links</h2>
+                  <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="underline"></div>
+              <p>© Copyright 2024. Made by Lakshmi Karthik</p>
+            </div>
+          </footer>
+          
+    </section>
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          // Close the navbar when a link is clicked in responsive mode
+          $('.nav-link').on('click', function () {
+              if ($('.navbar-collapse').hasClass('show')) {
+                  $('#navbarToggle').click();
+              }
+          });
+  
+          // Close the navbar when clicking outside of it in responsive mode
+          $(document).click(function (event) {
+              var clickover = $(event.target);
+              var navbarOpen = $('.navbar-collapse').hasClass('show');
+              if (navbarOpen === true && !clickover.closest('.navbar').length) {
+                  $('#navbarToggle').click();
+              }
+          });
+      });
+  </script>
+
+    <script>
+      let timeoutID;
+
+function hideSidebar() {
+  document.querySelector('.sidebar').classList.add('hidden');
+}
+
+function showSidebar() {
+  document.querySelector('.sidebar').classList.remove('hidden');
+  resetHideTimeout(); // Restart the timeout when mouse moves
+}
+
+function resetHideTimeout() {
+  clearTimeout(timeoutID); // Clear previous timeout
+  timeoutID = setTimeout(hideSidebar, 3000); // 3 seconds idle time
+}
+
+document.addEventListener('mousemove', showSidebar);
+
+// Start the timeout to hide the sidebar after the page loads
+window.onload = resetHideTimeout;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+.navbar {
+  background-color: #313638;
+  height: 80px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white !important;
+  margin-right: 40px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  /* The path stroke is set to white to change the color of the bars */
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+      width: auto;
+      height: auto;
+  }
+  
+  .navbar-nav .nav-link {
+      margin-right: 20px;
+  }
+
+  .name {
+      font-size: 1rem;
+  }
+
+  .logo {
+      height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      width: auto;
+      height: auto;
+  }
+
+  .navbar-nav .nav-link {
+      font-size: 1rem;
+      margin-right: 10px;
+  }
+
+  .name {
+      font-size: 0.9rem;
+  }
+
+  .logo {
+      height: 35px;
+  }
+}

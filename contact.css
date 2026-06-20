@@ -1,0 +1,126 @@
+.contact-container {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/019/926/787/non_2x/red-coffee-cup-on-old-wood-background-with-space-free-photo.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-overlay {
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  .contact-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    position: relative;
+    font-family: inherit;
+  }
+  
+  .contact-overlay .underline {
+    width: 80px; /* Adjust width as needed */
+    height: 5px; /* Thickness of the underline */
+    background-color: #f700ff; /* Color of the underline */
+    border-radius: 5px; /* Optional: Rounded corners for the underline */
+  }
+  
+  .contact-overlay p {
+    font-size: 1.2rem;
+    color: white;
+    font-family: inherit;
+    text-align: justify;
+  }
+  
+  .contact-form-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .contact-form-container .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form-container .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form-container .form-control {
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-form-container .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  
+  .contact-form-container .btn {
+    background-color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .contact-form-container .btn:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.05);
+  }
+
+  section {
+    padding-top: 75px; /* Adjust this value based on your navbar height */
+    margin-top: -75px; /* Negative margin to offset the visual gap */
+}
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .contact-overlay h1 {
+      font-size: 2rem;
+    }
+    .contact-overlay p {
+      font-size: 1rem;
+    }
+    .contact-form-container {
+      padding: 1rem;
+    }
+    .contact-form-container .btn {
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-overlay {
+      padding: 1rem;
+    }
+    .contact-form-container {
+      padding: 1rem;
+    }
+
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  

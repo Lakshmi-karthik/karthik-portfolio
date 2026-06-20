@@ -1,0 +1,159 @@
+.project-container {
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: inherit;
+    background-color: white;
+  }
+  
+  .project-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Make the heading bold */
+    position: relative;
+  }
+  
+  .project-container h1::after {
+    content: "";
+    display: block;
+    width: 80px; /* Adjust width as needed */
+    height: 5px; /* Thickness of the underline */
+    background-color: #ff00dd; /* Color of the underline */
+    margin: 0.5rem auto 0; /* Center the underline and add space */
+    border-radius: 5px; /* Optional: Rounded corners for the underline */
+  }
+  
+  .project-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .project-image {
+    flex: 1;
+    min-width: 50px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    border-radius: 8px; /* Optional: rounded corners for images */
+  }
+  
+  .project-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Make the project name bold */
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .project-details .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    width: 150px;
+  }
+
+  section {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+    margin-top: -80px; /* Negative margin to offset the visual gap */
+}
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .project-container h1 {
+      font-size: 2rem;
+    }
+    .project-details h2 {
+      font-size: 1.75rem;
+    }
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .project-container p {
+      font-size: 1.1rem;
+    }
+    .project-details p {
+      font-size: 1.1rem;
+    }
+    .project-details .btn {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-image, .project-details {
+      min-width: 100%;
+      text-align: center;
+    }
+    .project-details h2 {
+      font-size: 1.5rem;
+    }
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .project-container h1 {
+      font-size: 1.75rem;
+    }
+    .project-details h2 {
+      font-size: 1.25rem;
+    }
+    .project-container p {
+      font-size: 1rem;
+    }
+    .project-details p {
+      font-size: 1rem;
+    }
+    .project-details .btn {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+    }
+    section {
+        scroll-margin-top: -20px; /* Adjust as needed for smaller screens */
+    }
+  }
+  
